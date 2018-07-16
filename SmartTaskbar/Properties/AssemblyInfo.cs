@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("SmartTaskbar")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("SmartTaskbar")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Chanple")]
 [assembly: AssemblyProduct("SmartTaskbar")]
 [assembly: AssemblyCopyright("Copyright ©  2018 Chanple Cai")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Chanple")]
 [assembly: AssemblyCulture("")]
 
 // 将 ComVisible 设置为 false 会使此程序集中的类型
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("59ae9ba6-47c4-4671-8a58-6eb87a9674d3")]
+[assembly: Guid("77f7095c-165c-4181-9f0f-6558c7ca33bc")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // 可以指定所有值，也可以使用以下所示的 "*" 预置版本号和修订号
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.8.0")]
-[assembly: AssemblyFileVersion("1.1.8.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.2.0.0")]
