@@ -93,5 +93,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartTaskbar.Core\SmartTaskbar.Core.csproj">
+      <Project>{dbec56d6-9e72-4644-b64f-f113aa7722d0}</Project>
+      <Name>SmartTaskbar.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

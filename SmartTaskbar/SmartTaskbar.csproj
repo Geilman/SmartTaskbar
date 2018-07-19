@@ -92,5 +92,15 @@
   <ItemGroup>
     <None Include="Resources\logo_blue_128.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartTaskbar.Core\SmartTaskbar.Core.csproj">
+      <Project>{dbec56d6-9e72-4644-b64f-f113aa7722d0}</Project>
+      <Name>SmartTaskbar.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartTaskbar.Settings\SmartTaskbar.Settings.csproj">
+      <Project>{341a6593-61fb-461b-8e63-108428a42dc7}</Project>
+      <Name>SmartTaskbar.Settings</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
