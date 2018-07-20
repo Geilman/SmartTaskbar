@@ -5,15 +5,14 @@ namespace SmartTaskbar
     public class SystemTray
     {
         private readonly NotifyIcon notifyIcon;
+        private readonly Notifier notifier = new Notifier();
         public SystemTray()
         {
-            new Notifier();
             ToolStripMenuItem exit = new ToolStripMenuItem
             {
                 Text = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.StartsWith("zh") ? "退出" : "Exit",
                 Font = new System.Drawing.Font("Segoe UI", 9F)
             };
-
             ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
             contextMenuStrip.Items.Add(exit);
 
@@ -25,6 +24,21 @@ namespace SmartTaskbar
                 Visible = true
             };
 
+            exit.Click += (s, e) =>
+            {
+                notifier.Stop();
+                notifyIcon.Dispose();
+                Application.Exit();
+            };
+
+            notifyIcon.MouseClick += (s, e) =>
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    
+                }
+                notifier.Resume();
+            };
         }
     }
 }

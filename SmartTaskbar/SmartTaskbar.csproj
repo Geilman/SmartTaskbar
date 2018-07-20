@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMode.cs" />
     <Compile Include="MsgFilter.cs" />
     <Compile Include="Notifier.cs" />
     <Compile Include="Program.cs" />
